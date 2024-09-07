@@ -1,7 +1,7 @@
 # Café na Xícara
 link do site do projeto:
 
-<a href="https://example.com](https://cafe-na-xicara.vercel.app" target="_blank">Visite o cafe-na-xicara.vercel.app</a>
+<a href="https://cafe-na-xicara.vercel.app" target="_blank">Visite o cafe-na-xicara.vercel.app</a>
 
 
 Bem-vindo ao projeto **Café na Xícara**, um site dedicado aos amantes de café! Este site oferece informações sobre diferentes tipos de café e bebidas feitas à base de café, além de uma funcionalidade de pesquisa para facilitar a navegação.
