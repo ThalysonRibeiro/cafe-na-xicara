@@ -222,8 +222,20 @@ main {
     padding: 1rem;
     /* Adiciona um espaçamento inferior de 1rem entre os itens */
     margin-bottom: 1rem;
-    /* Aplica uma leve sombra ao redor do item para dar uma aparência elevada */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Adiciona uma sombra ao redor da carta para criar um efeito de profundidade */
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
+    /*Aplica uma margin no topo*/
+    margin-top: 3%;
+
+}
+
+.item-resultado:hover {
+    /*Ratira a borda exitente*/
+    border: none;
+    /**Aplica um efeito suave de transição*/
+    transition: ease all .55s;
+    /*Aumenta em 1.1 na escala geral*/
+    transform: scale(1.1);
 }
 
 .item-resultado h2 {
@@ -254,8 +266,9 @@ main {
 }
 
 .item-resultado a:hover {
-    text-decoration: underline;
     /* Sublinha o link ao passar o mouse */
+    text-decoration: underline;
+    /*Aplica a cor beige no texto*/
     color: beige;
 }
 
@@ -316,6 +329,15 @@ main {
     padding: 1%;
     /* Adiciona uma sombra ao redor da carta para criar um efeito de profundidade */
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card:hover {
+    /*Ratira a borda exitente*/
+    border: none;
+    /**Aplica um efeito suave de transição*/
+    transition: ease all .55s;
+    /*Aumenta em 1.1 na escala geral*/
+    transform: scale(1.1);
 }
 
 .card img {
