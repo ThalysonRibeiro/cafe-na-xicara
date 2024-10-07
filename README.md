@@ -1,4 +1,7 @@
 # Café na Xícara
+![Status do Projeto](https://img.shields.io/badge/status-em%20desenvolvimento-green)
+![Licença](https://img.shields.io/badge/license-MIT-blue)
+
 link do site do projeto:
 
 <a href="https://cafe-na-xicara.vercel.app" target="_blank">Visite o cafe-na-xicara.vercel.app</a>
