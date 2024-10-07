@@ -35,9 +35,18 @@ function pesquisar() {
         notasDeDegustacao = dado.notasDeDegustacao.toLowerCase();
         tags = dado.tags.toLowerCase();
         // se titulo oncludes da lisata de dados
-        if (tipo.includes(campoPesquisa) || sabor.includes(campoPesquisa) || caracteristicas.includes(campoPesquisa) || origem.includes(campoPesquisa) || dado.torraIdeal.includes() || metodosPreparo.includes(campoPesquisa) || notasDeDegustacao.includes(campoPesquisa) || tags.includes(campoPesquisa)) {
+        if (
+            tipo.includes(campoPesquisa) ||
+            sabor.includes(campoPesquisa) ||
+            caracteristicas.includes(campoPesquisa) ||
+            origem.includes(campoPesquisa) ||
+            dado.torraIdeal.includes() ||
+            metodosPreparo.includes(campoPesquisa) ||
+            notasDeDegustacao.includes(campoPesquisa) ||
+            tags.includes(campoPesquisa)
+        ) {
             //Cria um novo elemento
-            resultados += `<div class="item-resultado">
+            resultados += /* html */`<div class="item-resultado">
             <h2>${dado.tipo}</h2>
             <p><strong>Caracteristicas: </strong>${dado.caracteristicas}</p>
             <p><strong>Origem: </strong>${dado.origem}</p>
@@ -66,7 +75,7 @@ let card = "";
 // Itera sobre cada dado da lista de card da pesquisa
 for (let bebidas of bebidasDeCafe) {
     // Constrói o HTML para um resultado individual
-    card += `
+    card +=/* html */ `
            <div class="card">
                 <img src="${bebidas.imagem}" alt="">
                 <p><strong>Nome: </strong>${bebidas.nome}<br>

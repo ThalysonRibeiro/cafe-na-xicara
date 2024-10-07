@@ -1,256 +1,155 @@
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap');
-/* Importa a fonte "Playwrite CU" do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-/* Importa a fonte "Playfair Display" do Google Fonts */
-
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
 
 * {
     margin: 0;
-    /* Remove todas as margens padrão */
     padding: 0;
-    /* Remove todos os paddings padrão */
 }
 
 body {
-    /* Define a fonte padrão do corpo do documento e um backup com 'sans-serif' */
     font-family: "SUSE", sans-serif;
-    /* Define o peso padrão da fonte para o texto */
     font-weight: 400;
-    /* Aplica um gradiente de fundo, começando do topo (#a19b8c) para o fundo (#362626) */
     background-image: linear-gradient(#a19b8c, #403030, #362626);
 }
 
 header {
-    /* Define a largura total do cabeçalho para 100% da tela */
     width: 100%;
-    /* Utiliza o layout flexbox para alinhar os elementos filhos */
+    height: 50vh;
     display: flex;
-    /* Alinha os itens no centro verticalmente */
     align-items: center;
-    /* Centraliza os itens horizontalmente */
     justify-content: center;
 }
 
 .container-header {
-    /* Define um espaçamento no topo de 2% da altura da página */
-    padding-top: 2%;
-    /* Define a posição do elemento como absoluta (não se aplica por estar sobreposto pelo 'position: relative') */
     position: absolute;
-    /* Define a largura do elemento para 100% da área disponível */
     width: 100%;
-    /* Define a posição do elemento como relativa, para que ele seja posicionado de acordo com seus elementos contêineres */
-    position: relative;
-    /* Define um limite máximo de largura para o contêiner de 35rem */
     max-width: 35rem;
+    position: relative;
 }
 
 .container-header img {
-    /* Define a largura da imagem para 100% da largura do contêiner */
     width: 100%;
-    /* Mantém a proporção da imagem ao ajustar sua altura */
     height: auto;
 }
 
 .header-title {
-    /* Define o título como absoluto para posicionamento relativo ao contêiner pai */
     position: absolute;
-    /* Define a largura do título para 100% */
     width: 100%;
-    /* Define uma margem superior de 15% */
     margin-top: 15%;
-    /* Centraliza o título horizontalmente */
     left: 50%;
-    /* Move o título horizontal e verticalmente para o centro */
     transform: translate(-50%, -50%);
-    /* Define a cor do texto para beige */
     color: beige;
-    /* Define a fonte em negrito */
     font-weight: bold;
-    /* Alinha o texto ao centro */
     text-align: center;
-    /* Define uma fonte cursiva personalizada */
     font-family: "Playwrite CU", cursive;
-    /* Define o tamanho da fonte em 1.5em (relativo ao tamanho da fonte do pai) */
     font-size: 1.5em;
-    /* Adiciona uma sombra ao texto com um leve desfoque e opacidade */
     text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.5);
-    /* Define a prioridade de empilhamento (para que fique acima de outros elementos) */
     z-index: 1;
 }
 
 .container-search {
-    /* Define o posicionamento relativo para o contêiner de pesquisa */
     position: relative;
-    /* Define a largura do contêiner como 100% */
     width: 100%;
-    /* Move o contêiner para cima usando uma margem negativa */
     margin-top: -50%;
-    /* Centraliza horizontalmente */
     left: 50%;
-    /* Move o contêiner horizontalmente de volta ao centro */
     transform: translate(-50%, -50%);
-    /* Utiliza o layout flexbox para posicionar os elementos filhos em linha */
     display: flex;
-    /* Define a direção dos elementos em uma linha */
     flex-direction: row;
-    /* Alinha verticalmente os itens no centro */
     align-items: center;
-    /* Alinha horizontalmente os itens no centro */
     justify-content: center;
 }
 
 .container-search input {
-    /* Define a largura do campo de entrada em 30rem */
     width: 30rem;
-    /* Remove a borda padrão */
     border: none;
-    /* Define o preenchimento interno (espaço dentro do campo) de 1rem */
     padding: 1rem;
-    /* Deixa o fundo transparente */
     background: transparent;
-    /* Adiciona uma borda de 2px com cor semitransparente */
     border: 2px solid rgba(255, 255, 255, 0.5);
-    /* Arredonda as bordas com um raio de 1.5rem */
     border-radius: 1.5rem;
-    /* Aplica um desfoque no fundo do campo de entrada */
     backdrop-filter: blur(15px);
-    /* Define a cor do texto como branca */
     color: #ffffff;
-    /* Define o tamanho da fonte em 1rem */
     font-size: 1rem;
-    /* Garante que o preenchimento e bordas sejam incluídos na largura total */
     box-sizing: border-box;
-    /* Adiciona uma margem direita de 1% entre o campo de entrada e o botão */
     margin-right: 1%;
 }
 
 input::placeholder {
-    /* Define a cor do texto de espaço reservado como branca */
     color: white;
-    /* Define a opacidade do texto do placeholder para 65% */
     opacity: 65%;
 }
 
 .container-search button {
-    /* Define o preenchimento interno do botão */
     padding: 1.1rem 1.2rem;
-    /* Remove a borda padrão */
     border: none;
-    /* Arredonda as bordas do botão */
     border-radius: 1.5rem;
-    /* Define a cor de fundo do botão */
     background-color: #362626;
-    /* Define a cor do texto do botão */
     color: #F5F7F8;
-    /* Define o tamanho da fonte */
     font-size: 1rem;
-    /* Define o cursor do mouse como pointer (mãozinha) ao passar sobre o botão */
     cursor: pointer;
-    /* Adiciona uma borda semitransparente de 2px ao botão */
     border: 2px solid rgba(255, 255, 255, 0.5);
 }
 
 .container-search button:hover {
     background-color: #a19b8c;
-    /* Muda a cor de fundo do botão ao passar o mouse para preto */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    /* Adiciona uma sombra ao botão ao passar o mouse */
     color: #362626;
-    /* Define a cor do texto do botão como Van Dyke */
 }
 
 main {
-    /* position: relative; */
     display: flex;
-    /* Define o layout flexível para o conteúdo de <main> */
     flex-direction: column;
-    /* Organiza os elementos filhos em uma coluna */
     align-items: center;
-    /* Centraliza os elementos horizontalmente */
     justify-content: center;
-    /* Centraliza os elementos verticalmente */
     height: auto;
-    /* Define a altura como 100% da altura da janela de visualização */
     margin: 0;
-    /* Remove as margens */
     padding-top: 1%;
     z-index: 2;
-    /* Utiliza o layout flexbox novamente para os elementos filhos */
 }
 
 .resultados-pesquisa {
     display: flex;
-    /* Define o layout flexível para o conteúdo da section */
     flex-direction: column;
-    /* Organiza os elementos filhos em uma coluna */
     align-items: center;
-    /* Centraliza os elementos horizontalmente */
     margin-top: 3rem;
-    /* Adiciona 3rem de margem superior */
     width: 60rem;
-    /* Define a largura do contêiner de resultados como 60rem */
     height: auto;
     max-height: 50vh;
-    /* Define a altura do contêiner de resultados como 46% da altura da janela de visualização */
     overflow-y: auto;
-    /* Adiciona uma barra de rolagem vertical se o conteúdo exceder a altura */
     margin-top: 2rem;
-    /* Adiciona 2rem de margem superior */
     padding: 0.5rem;
-    /* Adiciona 0.5rem de padding interno */
     border-radius: 0.6rem;
-    /* Arredonda as bordas em 0.6rem */
     z-index: 2;
-    /* Utiliza o layout flexbox novamente para os elementos filhos */
 }
 
 .item-resultado {
-    /* Define a largura automática do elemento com base no conteúdo ou no contêiner */
     width: auto;
-    /* Define o fundo como transparente */
     background: transparent;
-    /* Adiciona uma borda de 2px com cor branca semitransparente */
     border: 2px solid rgba(255, 255, 255, 0.5);
-    /* Aplica um efeito de desfoque no fundo do elemento */
     backdrop-filter: blur(15px);
-    /* Arredonda os cantos do elemento com um raio de 0.6rem */
     border-radius: 0.6rem;
-    /* Define o preenchimento interno (espaçamento dentro do elemento) de 1rem */
     padding: 1rem;
-    /* Adiciona um espaçamento inferior de 1rem entre os itens */
     margin-bottom: 1rem;
-    /* Adiciona uma sombra ao redor da carta para criar um efeito de profundidade */
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
-    /*Aplica uma margin no topo*/
     margin-top: 3%;
 
 }
 
 .item-resultado:hover {
-    /*Ratira a borda exitente*/
     border: none;
-    /**Aplica um efeito suave de transição*/
     transition: ease all .55s;
-    /*Aumenta em 1.1 na escala geral*/
     transform: scale(1.1);
 }
 
 .item-resultado h2 {
-    /* Define o tamanho da fonte para o título (h2) em 1.5rem */
     font-size: 1.5rem;
-    /* Define a cor do texto como beige */
     color: beige;
-    /* Aplica a fonte 'Rubik' e define um backup 'sans-serif' caso a primeira fonte falhe */
     font-family: "Rubik", sans-serif;
 }
 
 .item-resultado p {
-    /* Define a cor do texto do parágrafo como preto */
     color: #000000;
-    /* Aplica peso 600 à fonte para torná-la mais espessa */
     font-weight: 600;
 }
 
@@ -260,246 +159,151 @@ main {
 
 .item-resultado a {
     text-decoration: none;
-    /* Remove a sublinhado dos links */
     color: beige;
-    /* Define a cor do link como marrom */
 }
 
 .item-resultado a:hover {
-    /* Sublinha o link ao passar o mouse */
     text-decoration: underline;
-    /*Aplica a cor beige no texto*/
     color: beige;
 }
 
 .descricao-meta {
     color: #45474B;
-    /* Define a cor do texto da descrição como cinza escuro */
     margin: 0.5rem 0;
-    /* Adiciona 0.5rem de margem superior e inferior */
+}
+
+.container-bebidas {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.container-bebidas h2 {
+    color: beige;
+    margin-top: 10%;
+    margin-bottom: 3%;
+
 }
 
 .container-cards {
-    /* Define a largura do contêiner de cartas para 100% da tela */
-    width: 100%;
-    /* Define a altura do contêiner para 100% da altura da janela de visualização (viewport) */
-    height: 100vh;
-    /* Utiliza o layout flexbox para organizar os elementos filhos */
+    width: 90%;
+    height: auto;
     display: flex;
-    /* Define que o contêiner deve ocupar o máximo de espaço disponível */
-    flex: 1;
-    /* Define a prioridade de empilhamento (para garantir que esteja acima de outros elementos com z-index menor) */
     z-index: 2;
-    /* Utiliza o layout flexbox novamente para os elementos filhos */
     display: flex;
-    /* Permite que os elementos filhos "quebrem" para a próxima linha quando o espaço disponível acabar */
     flex-wrap: wrap;
-    /* Alinha o conteúdo no centro verticalmente */
     align-content: center;
-    /* Alinha os itens no centro horizontalmente */
     justify-content: center;
 }
 
 .card {
-    /* Define o fundo da carta como transparente */
-    background: transparent;
-    /* Adiciona uma borda de 2px com cor branca semitransparente */
+    /* background: transparent; */
+    /* backdrop-filter: blur(15px); */
+    background: linear-gradient(#fffeea38, #362626);
     border: 2px solid rgba(255, 255, 255, 0.5);
-    /* Aplica um efeito de desfoque no fundo do elemento */
-    backdrop-filter: blur(15px);
-    /* Define a largura da carta para 25rem */
-    width: 25rem;
-    /* Define a largura máxima da carta para 25rem */
-    max-width: 25rem;
-    /* Define a largura mínima da carta para 22rem */
-    min-width: 22rem;
-    /* Define a altura da carta para 30% da altura da janela de visualização */
-    height: 30vh;
-    /* Utiliza o layout flexbox para alinhar os elementos filhos */
+    width: 300px;
+    height: 300px;
     display: flex;
-    /* Define que o cartão ocupa 30% do espaço flexível no contêiner */
-    flex: 30%;
-    /* Alinha os itens no centro verticalmente */
     align-items: center;
-    /* Arredonda os cantos do cartão com um raio de 1rem */
+    flex-direction: column;
+    justify-content: space-around;
     border-radius: 1rem;
-    /* Adiciona uma margem de 1% ao redor de cada carta */
     margin: 1%;
-    /* Define o preenchimento interno da carta de 1% */
     padding: 1%;
-    /* Adiciona uma sombra ao redor da carta para criar um efeito de profundidade */
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
 }
 
 .card:hover {
-    /*Ratira a borda exitente*/
     border: none;
-    /**Aplica um efeito suave de transição*/
     transition: ease all .55s;
-    /*Aumenta em 1.1 na escala geral*/
     transform: scale(1.1);
 }
 
 .card img {
-    /* Define a largura da imagem como 20% da largura da janela de visualização */
     width: 20vw;
-    /* Define a altura da imagem como 15% da altura da janela de visualização */
     height: 15vh;
-    /* Ajusta o tamanho da imagem para caber dentro do contêiner mantendo a proporção */
     background-size: contain;
-    /* Garante que a imagem seja redimensionada proporcionalmente */
     object-fit: contain;
-    /* Centraliza a imagem dentro do contêiner */
     background-position: center;
 }
 
 .card p {
-    /* Define o peso da fonte do parágrafo como 600 (semi-negrito) */
-    font-weight: 600;
+    font-weight: 500;
+    padding: 5px;
 }
 
 .card p strong {
-    /* Define a cor do texto dentro de <strong> como beige */
     color: beige;
 }
 
 footer {
     background-image: url(../img/desenho-cafe.png);
-    /* Define a imagem de fundo para o rodapé */
     background-size: 25%;
-    /* Faz a imagem de fundo cobrir toda a área disponível */
     background-position: center;
-    /* Centraliza a imagem de fundo */
     background-repeat: repeat;
-    /* Impede que a imagem de fundo se repita */
     font-weight: 500;
-    /* Define o peso da fonte como 500 */
     background-color: #F5F7F8;
-    /* Define a cor de fundo do rodapé como branco claro */
     color: #45474B;
-    /* Define a cor do texto do rodapé como cinza escuro */
     text-align: center;
-    /* Centraliza o texto horizontalmente */
     padding: 0;
-    /* Remove os paddings do rodapé */
     width: 100%;
-    /* Define a largura como 100% do contêiner pai */
     height: 20vh;
-    /* Define a altura como 20% da altura da janela de visualização */
     bottom: 1;
-    /* Define o rodapé na parte inferior da página */
     font-size: 1rem;
-    /* Define o tamanho da fonte como 1rem */
     display: grid;
-    /* Define o layout de grade para o rodapé */
     justify-content: center;
-    /* Centraliza os itens horizontalmente na grade */
     align-items: center;
-    /* Centraliza os itens verticalmente na grade */
     column-gap: 15px;
-    /* Define o espaçamento entre colunas como 15px */
 }
 
 .container-informacao {
-    /* Define o contêiner para exibir elementos em bloco (cada elemento ocupa toda a largura disponível) */
     display: block;
-    /* Este alinhamento não tem efeito em elementos de bloco (provavelmente um resquício de código) */
     align-items: center;
 }
 
 .github {
-    /* Utiliza o layout flexbox para alinhar os elementos filhos */
     display: flex;
-    /* Alinha os itens no centro verticalmente */
     align-items: center;
-    /* Centraliza os itens horizontalmente */
     justify-content: center;
 }
 
-.github a img {
-    /* Define a largura da imagem de forma automática (conforme o tamanho original ou o contêiner) */
-    width: auto;
-    /* Define a altura da imagem para 30 pixels */
-    height: 30px;
+.github a {
+    text-decoration: none;
+    color: #000000;
 }
 
-/* media queries css */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) and (max-width: 1024px) {
     h1 {
-        font-size: 4rem;
-        /* Mantém o tamanho grande para telas maiores */
+        font-size: 3.5rem;
         letter-spacing: 0.2rem;
-        /* Adiciona espaçamento entre letras */
     }
 
     section input {
         width: 80%;
-        /* Usando % para ser mais flexível */
         padding: 0.8rem;
-        /* Mantém o padding consistente */
     }
 
     .resultados-pesquisa {
         width: 80%;
-        /* Alterado para % para se ajustar melhor */
         height: auto;
-        /* Define a altura como 40% da altura da janela de visualização */
     }
 
     .item-resultado h2 {
         font-size: 1.3rem;
-        /* Reduz o tamanho da fonte para 1.3rem */
+    }
+
+    .card {
+        margin: 10px;
     }
 }
 
-@media screen and (max-width: 480px) {
-    h1 {
-        font-size: 2.5rem;
-        /* Tamanho reduzido para telas menores */
-        letter-spacing: 0.1rem;
-        /* Reduz o espaçamento entre letras */
-    }
-
-    section {
-        margin-bottom: 2rem;
-        /* Mantém a margem, ajuste conforme necessário */
-    }
-
-    section input {
-        width: 90%;
-        /* Maior flexibilidade com % */
-        padding: 0.8rem;
-        /* Mantendo padding consistente */
-    }
-
-    section button {
-        padding: 0.6rem 1rem;
-        /* Reduz o padding interno */
-        font-size: 0.9rem;
-        /* Tamanho de fonte reduzido para botões */
-    }
-
-    .resultados-pesquisa {
-        width: 90%;
-        /* Usando % para ajustar automaticamente */
-        height: auto;
-        /* Define a altura como 50% da altura da janela de visualização */
-    }
-
-    .item-resultado h2 {
-        font-size: 1.1rem;
-        /* Fonte menor para melhor visualização em telas pequenas */
-    }
-
-    footer {
-        font-size: 0.9rem;
-        /* Ajuste do tamanho da fonte do rodapé */
-    }
-}
 
 @media screen and (max-width: 344px) and (max-width: 412px) {
     .card {
-        min-width: 10rem;
-
+        width: 100%;
+        height: 300px;
     }
 }
