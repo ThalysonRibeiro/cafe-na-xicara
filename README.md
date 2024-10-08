@@ -4,7 +4,7 @@
 
 link do site do projeto:
 
-<a href="https://cafenaxicara.thalyson.dev/" target="_blank">Visite o cafe-na-xicara.vercel.app</a>
+<a href="https://cafenaxicara.thalyson.dev/" target="_blank">Visite o cafenaxicara.thalyson.dev</a>
 
 ![site](src/img/cafe-na-xicara.png)
 
